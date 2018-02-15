@@ -42,11 +42,6 @@ public class AppManager {
 		GTKManager.playSE("se/start.wav");
 	}
 
-	//ゲーム終了効果音を鳴らす
-	public static void endSE() {
-		GTKManager.playSE("se/end.wav");
-	}
-
 	//的画像を取得
 	public static Image getTargetImage() {
 		return GTKManager.getImage("img/mato.png");

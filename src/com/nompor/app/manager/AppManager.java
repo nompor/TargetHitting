@@ -81,7 +81,7 @@ public class AppManager {
 
 	//ゲーム画面を遷移する
 	public static void change(ViewType type) {
-		GTKManager.changeView(get(type));
+		GTKManager.changeViewEvent(get(type));
 	}
 
 	//ウィンドウ横幅取得

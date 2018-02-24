@@ -8,7 +8,6 @@ import java.awt.Point;
 import java.awt.event.MouseEvent;
 
 import com.nompor.app.manager.AppManager;
-import com.nompor.gtk.GTKManager;
 import com.nompor.gtk.GameView;
 import com.nompor.gtk.draw.DrawLabel;
 import com.nompor.gtk.draw.GraphicsUtil;
@@ -37,8 +36,8 @@ public class TitleMode extends GameView {
 	//ウィンドウにこのオブジェクトが設置されたら最初に呼び出しされる
 	public void start() {
 
-		//中心座標の取得
-		cx = GTKManager.getWidth()/2;
+		//ウィンドウの中心座標の取得
+		cx = AppManager.getW()/2;
 
 		//文字列オブジェクトを構築する
 		Graphics g = getGraphics();
@@ -83,7 +82,6 @@ public class TitleMode extends GameView {
 		description.draw(g);
 		g.setColor(end.contains(p) ? Color.ORANGE : Color.WHITE);
 		end.draw(g);
-
 	}
 
 	//説明の描画
